@@ -1,17 +1,33 @@
+# Environment / secrets
 .env
+
+# Python
 .venv/
 venv/
 __pycache__/
 *.py[cod]
+
+# Testing / linting
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
 build/
 dist/
 *.egg-info/
-.coverage
-htmlcov/
-logs/
-*.parquet
-*.log
 
+# Runtime artifacts
+logs/
+*.log
+*.parquet
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
