@@ -24,14 +24,14 @@ class Settings:
 
 def get_settings() -> Settings:
     return Settings(
-        aws_region=os.getenv("AWS_REGION", "us-east-1"),
-        s3_bucket=os.getenv("S3_BUCKET", "tesla-vehicle-telemetry"),
+        aws_region=os.getenv("AWS_REGION", "ap-south-1"),
+        s3_bucket=os.getenv("S3_BUCKET", "tesla-vehicle-telemetry-shyam"),
         s3_raw_prefix=os.getenv("S3_RAW_PREFIX", "raw/telemetry"),
         s3_processed_prefix=os.getenv("S3_PROCESSED_PREFIX", "processed/telemetry"),
         snowflake_account=os.getenv("SNOWFLAKE_ACCOUNT", ""),
         snowflake_user=os.getenv("SNOWFLAKE_USER", ""),
         snowflake_password=os.getenv("SNOWFLAKE_PASSWORD", ""),
-        snowflake_role=os.getenv("SNOWFLAKE_ROLE", "SYSADMIN"),
+        snowflake_role=os.getenv("SNOWFLAKE_ROLE", "ACCOUNTADMIN"),
         snowflake_warehouse=os.getenv("SNOWFLAKE_WAREHOUSE", "TELEMETRY_WH"),
         snowflake_database=os.getenv("SNOWFLAKE_DATABASE", "TESLA_TELEMETRY"),
         snowflake_schema=os.getenv("SNOWFLAKE_SCHEMA", "ANALYTICS"),

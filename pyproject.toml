@@ -6,14 +6,14 @@ build-backend = "setuptools.build_meta"
 name = "tesla-vehicle-telemetry-etl"
 version = "0.1.0"
 description = "S3, Airflow, and Snowflake ETL pipeline for Tesla-style vehicle telemetry."
-requires-python = ">=3.11"
+requires-python = ">=3.13,<3.14"
 dependencies = [
     "boto3==1.34.162",
-    "pandas==2.2.2",
-    "pyarrow==17.0.0",
+    "pandas>=2.2.3",
+    "pyarrow>=18.0.0",
     "pydantic==2.8.2",
     "python-dotenv==1.0.1",
-    "snowflake-connector-python==3.12.0",
+    "snowflake-connector-python==4.7.1",
 ]
 
 [project.optional-dependencies]

@@ -3,8 +3,7 @@ from __future__ import annotations
 from datetime import datetime, timedelta
 from pathlib import Path
 
-from airflow.decorators import dag, task
-from airflow.operators.python import get_current_context
+from airflow.sdk import dag, task, get_current_context
 
 from telemetry_etl.extract import download_s3_object, list_s3_objects
 from telemetry_etl.load import fetch_processed_s3_keys, load_curated_outputs, mark_s3_objects_processed
