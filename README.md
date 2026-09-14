@@ -56,6 +56,8 @@ flowchart LR
 
     L --> M["Incremental Processing"]
 
+```
+
 ---
 
 # 🔧 Technology Stack
